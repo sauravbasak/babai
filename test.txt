@@ -1,0 +1,42 @@
+hello everyone! I'm from India. India is a very beautiful country with many cultures. I love my country.
+
+
+
+1)x - to delete the unwanted character
+2)u - to undo the last the command and U to undo the whole line
+3)CTRL-R - to redo
+4)A - to append text at the end
+5):wq - to save and exit
+6):q! - to trash all changes
+7)dw - to move the cursor to the beginning of the word to delete that word
+8)2w -
+9)2w-to move the cursor 2 words forward
+10)3e - to move the cursor to the end of of the third word forward
+11)0(zero)- to move to the start of the line
+12)d2w - which deletes 2 words.. number can be changed for deleting the number of consecutive words for d3w
+13)dd to delete the line and 2dd to delete two line.. number can be changed for deleting the number of consecutive words
+14)p - puts the previously deleted text after the cursor 
+15)r - to replace the letter 
+16)ce - to change until the end of a word
+17)ce - deletes the word and places you in insert mode
+18)G - to move you to the bottom of the file
+19)gg - to move you to the start of the file
+20)% to find a matching),],}
+21):s/old/new/g to substitute new for old
+22)/ backward searchto find next occurence and to search in opposite direction
+23)? forward search
+24):l to run the shell commands like :ldir, :lls 
+25):w save the file
+26)v starts visual mode for selecting the lines and you can perform operation on that
+27):r - filename will insert the content into the current file
+28)R - to replace more than one character
+29)y - operator to copy text using v visual mode andp to paste it
+30)yw - yanks one word
+31)o - opens a line below the cursor and start insert mode
+32)O- opens a line above the cursor
+33)a- inserts a text after the cursor
+34)A- inserts text after the end of the line
+35)e - command moves to the end of a word
+36)y- operator yanks text, p pastes it
+37)R enters replace mode until escape is pressed
+38)ctrl-w - to jump from one window to another 
