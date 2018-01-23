@@ -1,7 +1,8 @@
 hello everyone! I'm from India. India is a very beautiful country with many cultures. I love my country.
 
 
-
+There are two types of modes in vim editor. 1) INSERT mode - i
+2) command mode- esc key
 1)x - to delete the unwanted character
 2)u - to undo the last the command and U to undo the whole line
 3)CTRL-R - to redo
