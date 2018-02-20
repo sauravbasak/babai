@@ -1,0 +1,83 @@
+q6)cat saurav30jan.csv
+USN,NAME,CGPA
+1,ram,8
+2,mohan,9
+3,lucky,7.5
+4,pooja,5
+5,rohan,4.9
+6,rony,7
+7,aditya,8.2
+8,yogi,8
+9,sahil,6.9
+10,bishwa,8.6
+
+ cut -d, -f 2 saurav30jan.csv|grep -v NAME|sort
+aditya
+bishwa
+lucky
+mohan
+pooja
+ram
+rohan
+rony
+sahil
+yogi
+
+Q7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q1)echo"what is your name"
+read"name"
+echo"name is $name"
+
+
+Q2)echo "Enter a Number:"
+read n
+if [ $n -gt 0 ]
+then 
+    echo "Number is positive"
+else
+    if [ $n -eq 0 ]
+    then
+        echo "Number is Zero!"  
+    else
+        echo "Number is Negative!!"
+    fi
+fi
+
+Q3)echo "Enter total marks obtained by the student"
+read n
+if [ $n -gt 90 ]
+then
+            echo "grade A"
+    else
+                if [ $n -gt 80 ]
+                then
+                echo "grade B"  
+                else
+                        if [ $n -gt 70 ]
+                        then
+                                echo "grade C"
+                        else
+                                if [$n -gt 60]
+                                then
+                                        echo "grade D"
+                                else
+                echo "FAIL!"
+        fi
+fi
+fi
+fi
