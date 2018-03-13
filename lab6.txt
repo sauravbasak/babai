@@ -99,13 +99,13 @@ fi
 Q2) File related commands:
 --->
   i) diff:
-  test---->kkjmkmf
+  test---->lolol
   test1--->cnhnbjjjoihjjh j n h cnbhc jn ygqijpn
   $diff test test1:
   result:
    1,2c1
  < 
- < kkjmkmf
+ < lolol
  ---
  > cnhnbjjjoihjjh j n h cnbhc jn ygqijpn 
  ii) $cmp:
@@ -114,17 +114,17 @@ Q2) File related commands:
  iii) $comm:
       result:
      	cnhnbjjjoihjjh j n h cnbhc jn ygqijpn 
- kkjmkmf
+ lolol
  iv) $cp test test2:
      result:
       $cat test2
-       kkjmkmf
+       lolol
    v) $mv test test3:
        result:
        $cat test
       cat: test: No such file or directory
        $cat test3
-       kkjmkmf
+       lolol
   vi) $rm test2
      result:
      cat: test2: No such file or directory
@@ -146,12 +146,12 @@ Q4)thetime=`date +%d-%m-%Y` #
 
 Q5) find:
    $find $pwd -name "*.txt" -print
-./ls3.txt
+./lab3.txt
 ./test.txt
-./achal.txt
-./ls4.txt
-./ls5.txt
-./ls2.txt
+./saurav.txt
+./lab4.txt
+./lab5.txt
+./lab2.txt
 
   xargs:
    echo a b c d e f| xargs -n 2
