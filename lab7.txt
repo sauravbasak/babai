@@ -1,85 +1,53 @@
-Q2) File related commands:
---->
-  i) diff:
-  test---->kkjmkmf
-  test1--->cnhnbjjjoihjjh j n h cnbhc jn ygqijpn
-  $diff test test1:
-  result:
-   1,2c1
- < 
- < kkjmkmf
- ---
- > cnhnbjjjoihjjh j n h cnbhc jn ygqijpn 
- ii) $cmp:
-    result:
-    test test1 differ: byte 1, line 1
- iii) $comm:
-      result:
-     	cnhnbjjjoihjjh j n h cnbhc jn ygqijpn 
- kkjmkmf
- iv) $cp test test2:
-     result:
-      $cat test2
-       kkjmkmf
-   v) $mv test test3:
-       result:
-       $cat test
-      cat: test: No such file or directory
-       $cat test3
-       kkjmkmf
-  vi) $rm test2
-     result:
-     cat: test2: No such file or directory
-Q3) ./ls5_for.sh
- bash: ./ls5_for.sh: Permission denied
-  chmod 755 ls5_for.sh
- $./ls5_for.sh
-Enter the value 0f n
-3
-1
-2
-3
-Q5) find:
-   $find $pwd -name "*.txt" -print
-./ls3.txt
-./test.txt
-./achal.txt
-./ls4.txt
-./ls5.txt
-./ls2.txt
 
-  xargs:
-   echo a b c d e f| xargs -n 2
- a b
- c d
- e f
 Q1)
-  if [ -r `$file` ]
-then
-        echo " The file has read permission"
-else
-     echo "The file does not  have read permission"
-     fi
-if [ -w `$file` ]
-then
-        echo "The file has write permission"
-else
-         echo "The file does not have write permission"
- fi
-if  [ -x `$file`]
-then
-         echo "The file has execution permission"
- else
-          echo "The file does not  have write permission"
-
- fi
-    result:
-     sh test.sh
- The file has read permission
- The file has write permission
- The file has execution permission
+------> cat test2.txt
+Employee Name    Employee ID    Designation           Salary
+John              110110         Manager               150000
+Jacob             12390         Software Developer     50000
+Yogendar          125683        Network Engineer       45000
+Soham             122787          M.D                  300000
+Hitesh            125376        C.E.0                  1500000
+Q2)
+-----> To replace "Manager" with "Director"
+ sed  's\Manager\Director\g;' test2.txt
+Result:
+Employee Name    Employee ID    Designation           Salary
+John              110110         Director               150000
+Jacob             12390         Software Developer     50000
+Yogendar          125683        Network Engineer       45000
+Soham             122787          M.D                  300000
+Hitesh            125376        C.E.0                  1500000
+Q3)
+cat test2.txt
+Employee Name    Employee ID    Designation           Salary
+John              110110         Director               150000
+Jacob             12390         Software Developer     50000
+Yogendar          125683        Network Engineer       45000
+Soham             122787          M.D                  300000
+Hitesh            125376        C.E.0                  1500000
+-----> To search for names that start with "S"
+$ grep -i ^s test2.txt
+Soham             122787          M.D                  300000
 Q4)
-----> time=`date +%d-%m-%Y` #
- for i in *
- mv $i $(date "+_%d%m%Y") ${i%}
- done 
+---->
+cat test
+Aggarwal
+Agarwal
+Agrawal
+Aggrawal
+aggarwal
+agarwal
+aggrawal
+agrawal
+----> 
+Find a regular expression for the above file:
+--> grep [aA][gg]g*[ar][ra]wal test
+Result:
+Aggarwal
+Agarwal
+Agrawal
+Aggrawal
+aggarwal
+agarwal
+aggrawal
+agrawal
