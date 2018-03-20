@@ -1,0 +1,21 @@
+q3) awk '{gsub(" ","",$0); print $0;}' awk.txt
+IlovemyIndia.
+
+
+q4) awk '{gsub(" ","",$0); print $0;}' awk.txt
+IlovemyIndia.
+Indiaisaverybigcountry.
+TherearemanyculturesinIndia
+Rahulisagoodboy
+Rahulcanplaycricket
+rahulcandance
+rahulcanswim
+rahulisgoodinnsinging
+
+
+q5) awk 'NR%2!=0' awk.txt
+I love my India.
+There are many cultures in India
+Rahul can play cricket
+rahul can swim
+
